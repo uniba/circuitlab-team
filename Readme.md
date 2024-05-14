@@ -1,26 +1,42 @@
+# HYPER INTERNET 3D
 
-# uniba.jp
-
-Corporate site of Uniba Inc.
+Portfolio site of Circuit Lab.
 
 ## Installation
 
-With [node.js](http://nodejs.org/) priviously installed:
-
-    $ npm install -g bower
-
 Clone repository and solve dependencies.
+Requires Ruby (3.1.5 is recommended).
 
-    $ git clone git@github.com:uniba/uniba.github.io.git
-    $ cd uniba.github.io
-    $ bundle install --path vendor/bundle
+    $ git clone git@github.com:uniba/circuitlab-team.git
+    $ cd circuitlab-team
+    $ gem install bundler
 
 ## Workflow
 
-To make preview server.
+To compile sass to css manually,
 
-    $ make server
+    $ bundle config set path 'vendor/bundle'
+    $ bundle install
+    $ bundle exec compass compile --config='./compass-config.rb'"
+
+or using Netlify CLI (it also solves dependencies).
+
+    $ netlify build
+
+Host ```/public``` as a static site for preview.
+
+    $ npm i -g serve
+    $ cd public
+    $ serve
+
+Netlify CLI can provide a local server with same configuration of remote.
+
+    $ netlify dev
 
 ## Deployment
 
-    $ make deploy
+Push codes to main branch to simply deploy to Netlify.
+
+Or deploy manually with Netlify CLI.
+
+    $ netlify deploy

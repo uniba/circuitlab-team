@@ -1,12 +1,12 @@
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-# http_path = "/"
-css_dir = "common/css"
-sass_dir = "common/sass"
-images_dir = "common/img"
-javascripts_dir = "common/js"
-fonts_dir = "common/fonts"
+http_path = "public/inbrowser"
+css_dir = "public/inbrowser/common/css"
+sass_dir = "source/sass"
+images_dir = "public/inbrowser/common/img"
+javascripts_dir = "public/inbrowser/common/js"
+fonts_dir = "public/inbrowser/common/fonts"
 
 output_style = :nested
 
