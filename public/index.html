@@ -14,9 +14,9 @@
         for(let i=0; Math.floor(i*10000)/10000<1+step; i+=step){
           keyframes.push(Math.floor(keyframe*10000)/10000);
           keyframe += Math.abs(
-            Math.sin(Math.PI*(i+step))*50 - Math.sin(Math.PI*i)*50
+            Math.sin(Math.PI*(i+step))*0.5 - Math.sin(Math.PI*i)*0.5
           );
-          if(keyframes[Math.floor(i/step)]> 100) break;
+          if(keyframes[Math.floor(i/step)]> 1) break;
         }
         console.log({keyframes});
       </script>
