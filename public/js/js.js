@@ -319,7 +319,9 @@ function setmap(_lat, _lang){
 		zoomControl : false,
 		addressControl : false,
 		linksControl : false,
-		enableCloseButton : false
+		enableCloseButton : false,
+		fullscreenControl: false
+		
 	});
 	//map.setStreetView(panorama);
 	panorama.setPov({heading:0, pitch:90, zoom:1.8});
