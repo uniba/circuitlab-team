@@ -98,6 +98,13 @@ THREE.ColladaLoader = function () {
 						if ( length === 0 ) {
 
 							length = request.getResponseHeader( "Content-Length" );
+              
+              if (length === null) {
+                
+                length = request.getResponseHeader( "X-Content-Length" );
+                               
+              }
+
 
 						}
 
