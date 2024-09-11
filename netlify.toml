@@ -6,5 +6,6 @@
   RUBY_VERSION = "3.1.5"
 
 [dev]
-  port = 8888
+  command = "sh dev.sh"
+  framework = "#static"
   publish = "./public"
