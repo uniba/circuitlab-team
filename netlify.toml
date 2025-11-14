@@ -1,5 +1,6 @@
 [build]
   command = "bundle config set path 'vendor/bundle' && bundle install && bundle exec compass compile --config='./compass-config.rb'"
+  edge_functions = "netlify/edge-functions"
   publish = "./public"
 
 [build.environment]

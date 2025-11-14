@@ -12,6 +12,10 @@ Clone repository and solve dependencies.
     $ cd circuitlab-team
     $ gem install bundler
 
+Set API Key for Google Maps as an environment variable.
+
+    GOOGLE_MAPS_API_KEY
+
 ## Workflow
 
 Launch a local server with watching sass code changes.
