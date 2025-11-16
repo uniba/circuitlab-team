@@ -9,3 +9,4 @@
 /public/inbrowser/common/css
 /vendor
 /.bundle
+.env
